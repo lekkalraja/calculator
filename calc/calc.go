@@ -1,15 +1,17 @@
 package calc
 
+import "errors"
+
 // Add func
-func Add(nums ...int) int {
+func Add(nums ...int) (int, error) {
 	if len(nums) < 2 {
-		return -1
+		return -1, errors.New("Please provide atleast 2 input arguements")
 	}
 	sum := 0
 	for _, num := range nums {
 		sum += num
 	}
-	return sum
+	return sum, nil
 }
 
 // Sub func

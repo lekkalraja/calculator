@@ -3,13 +3,13 @@ package calc
 import "testing"
 
 func TestAdd(t *testing.T) {
-	result := Add(1, 3)
+	result, _ := Add(1, 3)
 
 	if result != 4 {
 		t.Errorf("Add Failed :: Expected : %v But got %v", 4, result)
 	}
 
-	result = Add(3, 2)
+	result, _ = Add(3, 2)
 
 	if result == 4 {
 		t.Errorf("Add Failed :: Expected : %v But got %v", result, 4)
