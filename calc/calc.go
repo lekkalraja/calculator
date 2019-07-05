@@ -1,4 +1,4 @@
-package main
+package calc
 
 // Add func
 func Add(num1 int, num2 int) int {
